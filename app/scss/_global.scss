@@ -1,9 +1,10 @@
-html{
+html {
     box-sizing: border-box;
 }
+
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: inherit;
 }
 
@@ -12,18 +13,20 @@ a {
     text-decoration: none;
     color: #fff;
 }
+
 html,
 body {
     height: 100%;
     overflow-x: hidden;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p{
+p {
     padding: 0;
     margin: 0;
 }
@@ -34,21 +37,23 @@ li {
     padding: 0;
     list-style: none;
 }
-.container{
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
-.container-fluid{
+
+.container-fluid {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-// body{
-// font-family: 'Roboto', sans-serif;
-// font-weight: 400;
-// color: #fff;
-// position: relative;
-
-// }
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #2F2F2F;
+    position: relative;
+    background-color: #F3F3F3;
+}

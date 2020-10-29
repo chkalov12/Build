@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "normalize.css": "^8.0.1",
-    "save-dev": "0.0.1-security"
+    "save-dev": "0.0.1-security",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",

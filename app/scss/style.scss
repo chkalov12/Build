@@ -1,19 +1,27 @@
 @import "vars";
 @import "global";
 @import "fonts";
+.header{
+
+}
 .header-top {
-    background-color: rgba(1, 56, 120, 0.14);
+    background-color: rgba(0, 0, 0, 0.7);
     min-height: 81px;
     color: #fff;
     font-size: 16px;
     line-height: 17px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 10;
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     &__btn {
-        background: linear-gradient(90deg, #3FBB7B 0%, #31CB50 100%);
+        background: $green;
         padding: 15px 40px;
         border-radius: 25px;
     }
@@ -40,5 +48,50 @@
         border-bottom: 1px dashed #FFFFFF;
     }
 }
+.slider{
+    color: #fff;
+
+&__item{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+
+}
+&__info{
+    position: absolute;
+    max-width: 700px;
+    top: 35%;
+
+
+}
+&__title{
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 92px;
+    
+
+}
+}
+.slick-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color:rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    outline: none;
+    z-index: 2;
+    border-radius: 70px;
+    color: transparent;
+    height: 50px;
+    width: 50px;
+}
+.slick-next{
+    right: 38px;
+    color: transparent;
+}
+
 
 @import 'media';

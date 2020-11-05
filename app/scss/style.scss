@@ -1,9 +1,10 @@
 @import "vars";
 @import "global";
 @import "fonts";
-.header{
-
+.header {
+    background-color: #fff;
 }
+
 .header-top {
     background-color: rgba(0, 0, 0, 0.7);
     min-height: 81px;
@@ -20,16 +21,11 @@
         justify-content: space-between;
         align-items: center;
     }
-    &__btn {
-        background: $green;
-        padding: 15px 40px;
-        border-radius: 25px;
-    }
     &__menu {
         display: flex;
         justify-content: space-between;
         margin-right: 100px;
-        li+li{
+        li+li {
             margin-left: 15px;
         }
     }
@@ -48,38 +44,51 @@
         border-bottom: 1px dashed #FFFFFF;
     }
 }
-.slider{
+
+.slider {
     color: #fff;
-
-&__item{
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-    position: relative;
-
+    &__item {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.36);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    &__info {
+        position: absolute;
+        max-width: 700px;
+        top: 35%;
+        z-index: 5;
+        left: 25%;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 92px;
+    }
+    &__text {
+        margin-top: 25px;
+        font-size: 23px;
+        line-height: 32px;
+        font-weight: 500;
+    }
 }
-&__info{
-    position: absolute;
-    max-width: 700px;
-    top: 35%;
 
-
-}
-&__title{
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 92px;
-    
-
-}
-}
-.slick-btn{
+.slick-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     border: none;
-    background-color:rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     outline: none;
     z-index: 2;
@@ -88,10 +97,40 @@
     height: 50px;
     width: 50px;
 }
-.slick-next{
+
+.slick-next {
     right: 38px;
     color: transparent;
 }
 
+.header__nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    padding-top: 20px;
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        min-width: 550px;
+    }
+    &-link {
+        color: #323232;
+    }
+    &-social {
+        display: flex;
+        justify-content: space-between;
+        width: 365px;
+        .social {
+            display: flex;
+            align-items: center;
+            &__link {
+                margin-right: 15px;
+            }
+        }
+    }
+}
 
 @import 'media';

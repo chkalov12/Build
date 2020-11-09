@@ -3,6 +3,7 @@
 @import "fonts";
 .header {
     background-color: #fff;
+    height: 100vh;
 }
 
 .header-top {
@@ -198,6 +199,51 @@
             border-bottom: 2px dashed #31CB50;
         }
     }
+}
+
+.about__form {
+    background-color: #F8F9F7;
+    padding: 60px;
+    &-title {
+        font-size: 33px;
+        line-height: 40px;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .about__range-form {
+            display: flex;
+            justify-content: space-between;
+            max-width: 884px;
+            width: 100%;
+        }
+    }
+}
+
+.about__rooms {
+    min-width: 186px;
+    &-btn {
+        background-color: #fff;
+        width: 42px;
+        height: 35px;
+        margin-right: -2px;
+        font-weight: 700;
+        cursor: pointer;
+        &--active {
+            background-color: #825946;
+            color: #fff;
+            transition: all 0.5s;
+        }
+    }
+}
+
+.form-title {
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 15px;
 }
 
 @import 'media';

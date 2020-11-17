@@ -88,26 +88,6 @@
     }
 }
 
-.slick-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    outline: none;
-    z-index: 2;
-    border-radius: 70px;
-    color: transparent;
-    height: 50px;
-    width: 50px;
-}
-
-.slick-next {
-    right: 38px;
-    color: transparent;
-}
-
 .header__nav-wrap {
     display: flex;
     justify-content: space-between;
@@ -139,7 +119,6 @@
 }
 
 .about {
-    background-color: #fff;
     box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.14);
     padding-top: 70px;
     &__title {
@@ -206,7 +185,7 @@
 }
 
 .about__form {
-    background-color: #F8F9F7;
+    background-color: #f3f3f3;
     padding: 60px 20px 10px;
     &-title {
         font-size: 33px;
@@ -214,15 +193,10 @@
         font-weight: 700;
         margin-bottom: 60px;
     }
-    // &-inner {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
     .about__range-form {
         display: flex;
         justify-content: space-between;
     }
-    // }
 }
 
 .about__form-cost {
@@ -315,7 +289,37 @@
 .popular {
     &__inner {
         padding-top: 30px;
-        height: 280px;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        position: relative;
+        display: block;
+        .slick-arrow {
+            position: absolute;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            z-index: 2;
+            border-radius: 50%;
+            bottom: -30px;
+            width: 32px;
+            height: 32px;
+            background-color: #3FBC7B;
+            img {
+                position: absolute;
+                top: 9px;
+                left: 11px;
+            }
+        }
+        .slick-next {
+            left: 50px;
+            img {
+                left: 13px;
+            }
+        }
+        .slick-prev {
+            left: 0;
+        }
     }
     &__item {
         max-width: 537px;
@@ -323,6 +327,7 @@
         display: flex;
         justify-content: space-around;
         padding: 30px;
+        background-color: #fff;
     }
     &__title {
         font-size: 22px;
@@ -364,9 +369,9 @@
     }
 }
 
-.shadow {
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.14);
-    z-index: 5;
+.drop-shadow {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+    margin: 30px;
 }
 
 @import 'media';

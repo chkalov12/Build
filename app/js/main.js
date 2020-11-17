@@ -36,22 +36,6 @@ $(function() {
         }
     });
 
-    // $(".about__range-yard").ionRangeSlider({
-    //     type: "double",
-    //     skin: "round",
-    //     min: 483000,
-    //     max: 1256395,
-    //     from: 483000,
-    //     to: 1256395,
-    //     prefix: "",
-    //     grid: false,
-    //     force_edges: false,
-    //     hide_min_max: true,
-    //     hide_from_to: true,
-    //     block: false
-
-    // });
-
     let $yard = $(".about__range-yard");
     let $resultyard = $(".about__result-yard");
 
@@ -78,23 +62,6 @@ $(function() {
             $resultyard.text(prettify(data.from) + " — " + data.to_pretty);
         }
     });
-
-    // $(".about__range-floor").ionRangeSlider({
-    //     type: "double",
-    //     skin: "round",
-    //     min: 483000,
-    //     max: 1256395,
-    //     from: 483000,
-    //     to: 1256395,
-    //     prefix: "",
-    //     grid: false,
-    //     force_edges: false,
-    //     hide_min_max: true,
-    //     hide_from_to: true,
-    //     block: false,
-    //     step: 1
-
-    // });
 
     let $floor = $(".about__range-floor");
     let $resultfloor = $(".about__result-floor");
@@ -143,9 +110,8 @@ $(function() {
         slidesToScroll: 1,
         autoplay: true,
         speed: 1000,
-        // prevArrow: '<button class="slick-btn slick-prev"><img src="images/left.png" alt=""></button>',
-        // nextArrow: '<button class="slick-btn slick-next"><img src="images/right.svg" alt=""></button>'
-        arrows: false
+        prevArrow: '<button class="slick-btn slick-prev"><img src="images/slide-left.svg" alt=""></button>',
+        nextArrow: '<button class="slick-btn slick-next"><img src="images/slide-right.svg" alt=""></button>'
     });
 
 });

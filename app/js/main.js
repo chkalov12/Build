@@ -114,4 +114,15 @@ $(function() {
         nextArrow: '<button class="slick-btn slick-next"><img src="images/slide-right.svg" alt=""></button>'
     });
 
+    $('.enjoy__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        fade: true,
+        speed: 1000,
+        dots: true,
+        prevArrow: '<button class="slick-btn slick-prev"><img src="images/slide-left.svg" alt=""></button>',
+        nextArrow: '<button class="slick-btn slick-next"><img src="images/slide-right.svg" alt=""></button>'
+    });
+
 });

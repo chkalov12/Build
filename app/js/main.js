@@ -110,6 +110,7 @@ $(function() {
         slidesToScroll: 1,
         autoplay: true,
         speed: 1000,
+        centerMode: true,
         prevArrow: '<button class="slick-btn slick-prev"><img src="images/slide-left.svg" alt=""></button>',
         nextArrow: '<button class="slick-btn slick-next"><img src="images/slide-right.svg" alt=""></button>'
     });
@@ -123,6 +124,12 @@ $(function() {
         dots: true,
         prevArrow: '<button class="slick-btn slick-prev"><img src="images/slide-left.svg" alt=""></button>',
         nextArrow: '<button class="slick-btn slick-next"><img src="images/slide-right.svg" alt=""></button>'
+    });
+
+    $('.security__slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
     });
 
 });

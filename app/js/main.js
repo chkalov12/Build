@@ -129,7 +129,29 @@ $(function() {
     $('.security__slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '<button class="slick-btn slick-prev"><img src="images/slide-left.svg" alt=""></button>',
+        nextArrow: '<button class="slick-btn slick-next"><img src="images/slide-right.svg" alt=""></button>'
+    });
+
+    $('.promo__slider-nav').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
         arrows: false,
+        speed: 1500,
+        asNavFor: '.promo__slider-main',
+        fade: true
+
+    });
+    $('.promo__slider-main').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.promo__slider-nav',
+        autoplay: true,
+        speed: 1500,
+        autoplaySpeed: 5000,
+        prevArrow: '<button class="slick-btn slick-prev"><img src="images/slide-left.svg" alt=""></button>',
+        nextArrow: '<button class="slick-btn slick-next"><img src="images/slide-right.svg" alt=""></button>'
     });
 
 });

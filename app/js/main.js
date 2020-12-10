@@ -154,4 +154,43 @@ $(function() {
         nextArrow: '<button class="slick-btn slick-next"><img src="images/slide-right.svg" alt=""></button>'
     });
 
+    $('input, select').styler();
+
+
+    $('.build__slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 1000,
+        centerMode: true,
+        centerPadding: '100px',
+        prevArrow: '<button class="slick-btn slick-prev"><img src="images/slide-left.svg" alt=""></button>',
+        nextArrow: '<button class="slick-btn slick-next"><img src="images/slide-right.svg" alt=""></button>'
+    });
+
+    $(".build__month-line").ionRangeSlider({
+        skin: "round",
+        grid: true,
+        from: new Date().getMonth(),
+        grid_snap: true,
+        values: [
+            "Январь", "Февряль", "Март", "Апрель", "Май", "Июнь",
+            "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
+        ]
+    });
+
+    let year = document.querySelectorAll('.build__year-btn');
+    for (i = 0; i < year.length; i++) {
+        year[i].onclick = show;
+    }
+
+    function show() {
+        let year = document.querySelectorAll('.build__year-btn');
+        for (i = 0; i < year.length; i++) {
+            year[i].classList.remove('build__year-btn--active');
+            this.classList.add('build__year-btn--active');
+        }
+    }
+
+
 });

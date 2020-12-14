@@ -93,10 +93,10 @@ $(function() {
 
     let room = document.querySelectorAll('.about__rooms-btn');
     for (i = 0; i < room.length; i++) {
-        room[i].onclick = show;
+        room[i].onclick = rooms;
     }
 
-    function show() {
+    function rooms() {
         let room = document.querySelectorAll('.about__rooms-btn');
         for (i = 0; i < room.length; i++) {
             room[i].classList.remove('about__rooms-btn--active');
@@ -191,6 +191,15 @@ $(function() {
             this.classList.add('build__year-btn--active');
         }
     }
+
+    $('.connect__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        speed: 1000,
+        prevArrow: '<button class="slick-btn slick-prev"><img src="images/connect-arrow.svg" alt=""></button>',
+        nextArrow: '<button class="slick-btn slick-next"><img src="images/connect-arrow.svg" alt=""></button>',
+    });
 
 
 });

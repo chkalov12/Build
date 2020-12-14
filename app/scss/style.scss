@@ -95,7 +95,9 @@
     }
     
     .header__nav {
+        box-shadow: 0 7px 20px -1px rgba(1, 56, 120, 0.14);
         padding: 20px 0;
+        ;
         &-menu {
             display: flex;
             justify-content: space-between;
@@ -119,7 +121,6 @@
     }
     
     .about {
-        box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.14);
         padding-top: 70px;
         &__title {
             font-size: 42px;
@@ -825,6 +826,174 @@
             font-size: 17px;
             line-height: 19px;
             color: #252D34;
+        }
+    }
+    
+    .connect {
+        background: linear-gradient(90deg, #3FBB7B 0%, #31CB50 100%);
+        color: #fff;
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__info {
+            padding: 45px 0;
+            max-width: 540px;
+        }
+        &__title {
+            font-size: 39px;
+            line-height: 54px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        &__btn {
+            background-color: #fff;
+            color: #252D34;
+            font-weight: 700;
+            &:hover {
+                color: #fff;
+            }
+            margin: 25px 0 111px;
+        }
+        &__tel {
+            font-size: 22px;
+            line-height: 27px;
+            margin-top: 10px;
+        }
+        &__work {
+            font-size: 14px;
+            line-height: 23px;
+            margin-top: 15px;
+        }
+        &__slider {
+            max-width: 431px;
+            &-item {
+                min-width: 431px;
+                min-height: 498px;
+                background-position: center center;
+                background-position: cover;
+                background-repeat: no-repeat;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background-color: #000;
+                    opacity: 0.17;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+            &-wrap {
+                position: absolute;
+                z-index: 2;
+                text-align: center;
+                width: 100%;
+                bottom: 45px;
+            }
+            &-name {
+                font-size: 45px;
+                line-height: 54px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            &-profession {
+                font-size: 21px;
+                line-height: 27px;
+            }
+        }
+        .slick-slide {
+            height: 498px;
+        }
+        .slick-arrow {
+            position: absolute;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            z-index: 5;
+            border-radius: 0;
+            width: 15px;
+            height: 32px;
+            background-color: transparent;
+            transition: all 0.3s;
+        }
+        .slick-btn {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .slick-prev {
+            left: -70px;
+        }
+        .slick-next {
+            transform: rotate(180deg);
+            top: 50.7%;
+            right: -70px;
+        }
+    }
+    
+    .footer {
+        padding: 42px 0;
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo {
+            margin-right: 100px;
+        }
+        &__menu {
+            width: 170px;
+            &+& {
+                margin-left: 20px;
+            }
+        }
+        &__link {
+            color: #323232;
+            font-size: 14px;
+            line-height: 35px;
+        }
+        &__info {
+            margin-left: auto;
+            text-align: right;
+        }
+        &__btn {
+            width: 218px;
+            text-align: center;
+            padding: 12px 40px;
+            margin-bottom: 34px;
+            background-color: #e2e2e0;
+            color: #252D34;
+            &:hover {
+                color: #fff;
+            }
+            &+& {
+                background: #3FBB7B;
+                color: #fff;
+                margin-left: 17px;
+                &:hover {
+                    background: #4B4F53;
+                }
+            }
+        }
+        &__tel {
+            font-size: 21px;
+            line-height: 24px;
+            font-weight: 700;
+            margin: 13px 0;
+            color: #000;
+            display: block;
+        }
+        &__info-link {
+            color: #3FBC7B;
+            text-decoration-line: underline;
+            margin-bottom: 22px;
+        }
+        .social {
+            display: flex;
+            justify-content: flex-end;
+            li+li {
+                margin-left: 15px;
+            }
         }
     }
     

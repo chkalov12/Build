@@ -1,1 +1,26 @@
-@media (max-width: 1220px) {}
+@media (max-width: 1160px) {
+    .header-top {
+        &__menu {
+            display: none;
+        }
+        &__btn {
+            margin-right: auto;
+            margin-left: 15px;
+        }
+    }
+}
+
+@media (max-width: 610px) {
+    .header-top {
+        &__btn {
+            margin-left: auto;
+            margin-right: 0;
+        }
+        .logo {
+            display: block;
+        }
+        &__phonewrap {
+            display: none;
+        }
+    }
+}

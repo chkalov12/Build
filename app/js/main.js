@@ -201,5 +201,13 @@ $(function() {
         nextArrow: '<button class="slick-btn slick-next"><img src="images/connect-arrow.svg" alt=""></button>',
     });
 
+    $(".header__burger").on('click', function() {
+        $('.menu-green').addClass('menu-green--active');
+    });
+
+    $(".close-btn").on('click', function() {
+        $('.menu-green').removeClass('menu-green--active');
+    });
+
 
 });

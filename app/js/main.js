@@ -152,7 +152,14 @@ $(function() {
         slidesToScroll: 1,
         arrows: true,
         prevArrow: '<button class="slick-btn slick-prev"><img src="images/slide-left.svg" alt=""></button>',
-        nextArrow: '<button class="slick-btn slick-next"><img src="images/slide-right.svg" alt=""></button>'
+        nextArrow: '<button class="slick-btn slick-next"><img src="images/slide-right.svg" alt=""></button>',
+        responsive: [{
+            breakpoint: 1231,
+            settings: {
+                arrows: false,
+                slidesToShow: 1
+            }
+        }]
     });
 
     $('.promo__slider-nav').slick({
@@ -172,7 +179,13 @@ $(function() {
         speed: 1500,
         autoplaySpeed: 5000,
         prevArrow: '<button class="slick-btn slick-prev"><img src="images/slide-left.svg" alt=""></button>',
-        nextArrow: '<button class="slick-btn slick-next"><img src="images/slide-right.svg" alt=""></button>'
+        nextArrow: '<button class="slick-btn slick-next"><img src="images/slide-right.svg" alt=""></button>',
+        responsive: [{
+            breakpoint: 601,
+            settings: {
+                arrows: false,
+            }
+        }]
     });
 
     $('input, select').styler();
@@ -186,7 +199,29 @@ $(function() {
         centerMode: true,
         centerPadding: '100px',
         prevArrow: '<button class="slick-btn slick-prev"><img src="images/slide-left.svg" alt=""></button>',
-        nextArrow: '<button class="slick-btn slick-next"><img src="images/slide-right.svg" alt=""></button>'
+        nextArrow: '<button class="slick-btn slick-next"><img src="images/slide-right.svg" alt=""></button>',
+        responsive: [{
+                breakpoint: 1141,
+                settings: {
+                    centerMode: false,
+                }
+            },
+            {
+                breakpoint: 981,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,
+                    arrows: false
+                }
+            }
+        ]
     });
 
     $(".build__month-line").ionRangeSlider({
@@ -220,6 +255,12 @@ $(function() {
         speed: 1000,
         prevArrow: '<button class="slick-btn slick-prev"><img src="images/connect-arrow.svg" alt=""></button>',
         nextArrow: '<button class="slick-btn slick-next"><img src="images/connect-arrow.svg" alt=""></button>',
+        responsive: [{
+            breakpoint: 1331,
+            settings: {
+                arrows: false
+            }
+        }]
     });
 
     $(".header__burger").on('click', function() {

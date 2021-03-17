@@ -1,5 +1,7 @@
 $(function() {
 
+    $('.preloader').fadeOut('slow');
+
     $('.header__slider-inner').slick({
         autoplay: true,
         fade: true,
